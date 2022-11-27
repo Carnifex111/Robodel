@@ -1,6 +1,5 @@
 import "./form.scss";
 import arrow from "../../resources/icon/arrow-left.svg";
-import Input from "../../subComponent/input/input";
 import { useFormik } from "formik";
 import * as Yup from 'yup';
 
@@ -47,9 +46,9 @@ const BasicForm = ({ step, setStep }) => {
         <div className="form-container__adress">
           <h2>Куда доставить заказ?</h2>
           <div className="form-container__adress__inputs">
-            <Input
+            <input
               className={`input-form ${formik.touched.adress && formik.errors.adress ? 'input-form__invalid' : null}`}
-              name={"adress"}
+              name="adress"
               placeholder="Адрес доставки"
               type="text"
               value={formik.values.adress}
@@ -57,16 +56,16 @@ const BasicForm = ({ step, setStep }) => {
               onBlur={formik.handleBlur}
             />
             <div className="form-container__adress__inputs__home">
-              <Input
+              <input
                 className={`input-form ${formik.touched.home && formik.errors.home ? 'input-form__invalid' : null}`}
-                name={"home"}
+                name="home"
                 placeholder="Дом"
                 type="text"
                 value={formik.values.home}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
               />
-              <Input
+              <input
                 className={`input-form ${formik.touched.entrance && formik.errors.entrance ? 'input-form__invalid' : null}`}
                 name={"entrance"}
                 placeholder="Подъед"
@@ -84,9 +83,9 @@ const BasicForm = ({ step, setStep }) => {
         <div className="form-container__contacts">
           <h2>Ваши данные</h2>
           <div className="form-container__contacts__inputs">
-            <Input
+            <input
               className={`input-form ${formik.touched.lastName && formik.errors.lastName ? 'input-form__invalid' : null}`}
-              name={"lastName"}
+              name="lastName"
               placeholder="Имя"
               type="text"
               value={formik.values.lastName}
@@ -94,9 +93,9 @@ const BasicForm = ({ step, setStep }) => {
               onBlur={formik.handleBlur}
             />
             {formik.errors.lastName && formik.touched.lastName ? <div className="validate">{formik.errors.lastName}</div> : null}
-            <Input
+            <input
               className={`input-form ${formik.touched.firstName && formik.errors.firstName ? 'input-form__invalid' : null}`}
-              name={"firstName"}
+              name="firstName"
               placeholder="Фамилия"
               type="text"
               value={formik.values.firstName}
@@ -104,9 +103,9 @@ const BasicForm = ({ step, setStep }) => {
               onBlur={formik.handleBlur}
             />
             {formik.errors.firstName && formik.touched.firstName ? <div className="validate">{formik.errors.firstName}</div> : null}
-            <Input
+            <input
               className={`input-form ${formik.touched.phone && formik.errors.phone ? 'input-form__invalid' : null}`}
-              name={"phone"}
+              name="phone"
               placeholder="Номер телефона"
               type="tel"
               value={formik.values.phone}
