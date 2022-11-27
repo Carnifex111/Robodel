@@ -1,0 +1,29 @@
+@import "../../style/variables.scss";
+
+.order-wrapper {
+    border-radius: 18px;
+    background-color: $grey;
+    width: 443px;
+    padding: 0 40px 40px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    .step-back {
+        align-self: flex-start;
+        background-color: inherit;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $primaryViolet;
+    }
+    h2 {
+        margin-top: 32px;
+    }
+    p {
+        margin-top: 16px;
+        color: #a4a4a4;
+    }
+    button {
+        margin-top: 32px;
+    }
+}

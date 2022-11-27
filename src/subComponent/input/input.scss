@@ -1,0 +1,25 @@
+@import "../../style/variables.scss";
+
+.input-form {
+  padding: 11.5px 16px;
+  background: $white;
+  border-radius: 16px;
+  border: none;
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+  color: #282927;
+
+  &::placeholder {
+    color: #a4a4a4;
+  }
+
+  &__invalid {
+    padding: 11.5px 16px 11.5px 16px;
+    border-radius: 16px;
+    width: 100%;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #d42222;
+  }
+}

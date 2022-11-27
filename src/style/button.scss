@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+.primary-button {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    border-radius: 12px;
+    color: $white;
+    background-color: $primaryViolet;
+    transition: 0.3s ease;
+    text-align: center;
+
+    &:hover {
+        background: #6562C2;
+    }
+}
