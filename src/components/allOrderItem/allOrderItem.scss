@@ -1,0 +1,45 @@
+.aop__orders-item {
+    background-color: #fff;
+    width: 100%;
+    padding: 24px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    .aop__orders-content {
+        .aop__orders-detail {
+            margin-top: 16px;
+            display: flex;
+            gap: 70px;
+            & > div {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                p {
+                    color: #A4A4A4;
+                    span {
+                        color: #000000;
+                    }
+                    &:first-child {
+                        span {
+                            margin-left: 24px;
+                        }
+                    }
+                    &:last-child {
+                        span {
+                            margin-left: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .aop__orders-status {
+        align-self: center;
+        border-radius: 8px;
+        font-size: 12px;
+        background-color: #FFF9E9;
+        padding: 10.5px 12px;
+        color: #BA9532;
+    }
+
+}
