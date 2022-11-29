@@ -10,6 +10,7 @@
   gap: 30px;
   box-sizing: border-box;
   margin-bottom: auto;
+
   &-container {
     display: flex;
     flex-direction: column;
@@ -22,7 +23,7 @@
       align-items: center;
       gap: 10px;
       color: $primaryViolet;
-  }
+    }
 
     &__adress {
       display: flex;
@@ -55,7 +56,7 @@
   }
 }
 
-.validate{
+.validate {
   color: #EE204D;
   font-size: 12px;
   margin-left: 15px;

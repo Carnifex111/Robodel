@@ -1,0 +1,47 @@
+@import "../../style/variables.scss";
+
+.steps-tracking {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        &_num {
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 3px solid #e4e2ff;
+            color: #e4e2ff;
+            cursor: context-menu;
+
+            &.num-active {
+                color: $white;
+                background: $primaryViolet;
+                border: none;
+            }
+        }
+
+        & p {
+            font-size: 14px;
+            color: #414240;
+        }
+    }
+
+    .steps-line {
+        width: 3px;
+        height: 16px;
+        background-color: #e4e2ff;
+        border-radius: 16px;
+        margin-left: 19.5px;
+    }
+}
