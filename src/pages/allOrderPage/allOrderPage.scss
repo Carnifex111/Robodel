@@ -75,6 +75,9 @@ body ::-webkit-scrollbar {
                     }
                 }
             }
+            & button {
+                background: none;
+            }
         }
         .aop__orders {
             display: flex;
