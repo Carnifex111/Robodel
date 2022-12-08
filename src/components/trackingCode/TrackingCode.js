@@ -5,13 +5,14 @@ function TrackingCode() {
   return (
     <div className="tracking-code">
       <div className="tracking-code__receiving">
-        <h3>Код получения:</h3>
-        <h2 className="receipt-code">282933</h2>
+        <a href="tel:+7(912)-345-67-89" className="receipt-code">
+          +7 (912)-345-67-89
+        </a>
       </div>
       <div className="tracking-code__additional-info">
         <p>
-          На ваш номер телефона отправлено СМС от робота <br /> напишите ему код
-          получения чтобы забрать заказ
+          На этот номер телефона вы можете позвонить, когда приедет робот, чтобы
+          забрать заказ
         </p>
       </div>
     </div>

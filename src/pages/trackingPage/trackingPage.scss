@@ -2,4 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .yandex-map {
+        overflow: hidden;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
 }
