@@ -7,7 +7,10 @@ const AllOrderItem = ({el}) => {
     return (
         <div className="aop__orders-item">
             <div className="aop__orders-content">
-                <h3>{title}</h3>
+                <div className="aop__orders--mobile">
+                    <h3>{title}</h3>
+                    <p className="aop__orders-status aop__orders-status--mobile">{process}</p>
+                </div>
                 <div className="aop__orders-detail">
                     <div>
                         <p>Товар: <span>{name}</span></p>
@@ -15,7 +18,7 @@ const AllOrderItem = ({el}) => {
                     </div>
                     <div>
                         <p>Дата доставки: <span>{date}</span></p>
-                        <p>Продавец: <span>{seller}</span></p>
+                        <p>Покупатель: <span>{seller}</span></p>
                     </div>
                 </div>
             </div>

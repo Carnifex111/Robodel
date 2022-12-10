@@ -8,6 +8,14 @@
     display: flex;
     flex-direction: column;
     height: 300px;
+    @media (max-width: 495px) {
+        width: 100%;
+        min-height: 350px;
+        padding: 24px 40px;
+    }
+    @media (max-width: 320px) {
+        min-height: 380px;
+    }
     .step-back {
         align-self: flex-start;
         background-color: inherit;

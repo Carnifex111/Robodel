@@ -5,7 +5,31 @@
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 600px) {
+        padding: 16px;
+    }
     .aop__orders-content {
+        @media (max-width: 600px) {
+            width: 100%;   
+        }
+        .aop__orders--mobile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h3 {
+                @media (max-width: 600px) {
+                    font-size: 16px;
+                }
+            }
+            .aop__orders-status--mobile {
+                display: none;
+                @media (max-width: 600px) {
+                    display: block;
+                    font-size: 10px;
+                    padding: 10.5px 8px;
+                }
+            }
+        }
         .aop__orders-detail {
             margin-top: 16px;
             display: flex;
@@ -14,10 +38,21 @@
                 display: flex;
                 flex-direction: column;
                 gap: 5px;
+                &:first-child {
+                    @media (max-width: 870px) {
+                        display: none;
+                    }
+                }
                 p {
                     color: #A4A4A4;
+                    @media (max-width: 600px) {
+                        font-size: 14px;
+                    }
                     span {
                         color: #000000;
+                        @media (max-width: 600px) {
+                            font-size: 14px;
+                        }
                     }
                     &:first-child {
                         span {
@@ -40,6 +75,9 @@
         background-color: #FFF9E9;
         padding: 10.5px 12px;
         color: #BA9532;
+        @media (max-width: 600px) {
+            display: none;
+        }
     }
 
 }

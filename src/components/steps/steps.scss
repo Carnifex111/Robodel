@@ -2,6 +2,9 @@
 
 .steps {
   margin-top: 100px;
+  @media (max-width: 1170px) {
+    display: none;
+  }
 
   &__container {
     display: flex;

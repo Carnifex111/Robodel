@@ -31,7 +31,7 @@ const AllOrderPage = () => {
 
                 <div className="aop__header">
 
-                    <h2 className="aop__header-name">Алёна Чибичик</h2>
+                    <h2 className="aop__header-name">ООО "Телефон4ики"</h2>
 
                     <div className="aop__header-items">
 
