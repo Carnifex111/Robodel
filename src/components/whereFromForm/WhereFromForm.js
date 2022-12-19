@@ -1,10 +1,9 @@
-import "./form.scss";
+import "./whereFromForm.scss";
 import arrow from "../../resources/icon/arrow-left.svg";
 import { useFormik } from "formik";
-import * as Yup from 'yup';
-import { Link } from "react-router-dom";
+import * as Yup from "yup";
 
-const BasicForm = ({ step, setStep }) => {
+const WhereFromForm = ({ step, setStep }) => {
   const phoneRegExp =
     /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
@@ -29,18 +28,23 @@ const BasicForm = ({ step, setStep }) => {
         .matches(phoneRegExp, "Некорректный номер телефона"),
       entrance: Yup.number().required("Введите номер подъезда"),
     }),
-    onSubmit: (values) => setStep((step = 2)),
+    onSubmit: (values) => setStep((step = 3)),
   });
 
   return (
     <form className="form" onSubmit={formik.handleSubmit}>
       <div className="form-container">
-        <Link to={'/'} className="step-back">
+        <button
+          className="step-back"
+          onClick={() => {
+            setStep((step = 1));
+          }}
+        >
           <img src={arrow} alt="arrow-left" /> Назад
-        </Link>
+        </button>
 
         <div className="form-container__adress">
-          <h2>Куда доставить заказ?</h2>
+          <h2>Откуда доставить заказ?</h2>
           <div className="form-container__adress__inputs">
             <input
               className={`input-form ${
@@ -93,7 +97,7 @@ const BasicForm = ({ step, setStep }) => {
         </div>
 
         <div className="form-container__contacts">
-          <h2>Ваши данные</h2>
+          <h2>Данные отправителя</h2>
           <div className="form-container__contacts__inputs">
             <input
               className={`input-form ${
@@ -146,9 +150,9 @@ const BasicForm = ({ step, setStep }) => {
           </div>
         </div>
       </div>
-      <button className="primary-button">Продолжить</button>
+      <button className="primary-button">Оформить заказ</button>
     </form>
   );
 };
 
-export default BasicForm;
+export default WhereFromForm;
