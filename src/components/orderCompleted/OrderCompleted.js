@@ -8,7 +8,7 @@ const OrderCompleted = (props) => {
 
     return (
         <div className="order-wrapper">
-            <button className="step-back" onClick={() => { setStep(step = 1) }}>
+            <button className="step-back" onClick={() => { setStep(step = 2) }}>
                 <img src={arrow} alt="arrow-left" /> Назад
             </button>
             <h2>Заказ оформлен!</h2>

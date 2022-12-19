@@ -1,0 +1,67 @@
+@import "../../style/variables.scss";
+
+.form {
+  border-radius: 18px;
+  background-color: $grey;
+  width: 443px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-sizing: border-box;
+  margin-bottom: auto;
+  @media (max-width: 495px) {
+    width: 100%;
+    padding: 35px 16px;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .step-back {
+      align-self: flex-start;
+      background-color: inherit;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: $primaryViolet;
+    }
+
+    &__adress {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+
+        &__home {
+          display: flex;
+          gap: 11px;
+        }
+      }
+    }
+
+    &__contacts {
+      display: flex;
+      gap: 16px;
+      flex-direction: column;
+
+      &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+      }
+    }
+  }
+}
+
+.validate {
+  color: #EE204D;
+  font-size: 12px;
+  margin-left: 15px;
+}
