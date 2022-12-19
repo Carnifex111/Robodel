@@ -7,6 +7,7 @@ import data from "./data.json";
 
 import arrow from "../../resources/icon/arrow-left.svg";
 import filter from "../../resources/icon/filter.svg"
+import { Link } from "react-router-dom";
 
 
 const AllOrderPage = () => {
@@ -27,11 +28,11 @@ const AllOrderPage = () => {
         <div className="aop">
             <div className="aop__container">
 
-                <p className="aop__back"><img src={arrow} alt="back" /> К маркетплейсу</p>
+                {/* <p className="aop__back"><img src={arrow} alt="back" /> К маркетплейсу</p> */}
 
                 <div className="aop__header">
 
-                    <h2 className="aop__header-name">ООО "Телефон4ики"</h2>
+                    <h2 className="aop__header-name">Алена Чибичик</h2>
 
                     <div className="aop__header-items">
 
@@ -62,7 +63,7 @@ const AllOrderPage = () => {
                             return ( <AllOrderItem key={el.id} el={el}/> );
                         })
                     }
-                   
+                    <Link to={'/form'} className="aop__orders-new"> Новая доставка </Link>
                 </div>
             </div>
         </div>

@@ -2,6 +2,7 @@ import "./form.scss";
 import arrow from "../../resources/icon/arrow-left.svg";
 import { useFormik } from "formik";
 import * as Yup from 'yup';
+import { Link } from "react-router-dom";
 
 
 
@@ -39,9 +40,9 @@ const BasicForm = ({ step, setStep }) => {
   return (
     <form className="form" onSubmit={formik.handleSubmit}>
       <div className="form-container">
-        <button className="step-back">
+        <Link to={'/'} className="step-back">
           <img src={arrow} alt="arrow-left" /> Назад
-        </button>
+        </Link>
 
         <div className="form-container__adress">
           <h2>Куда доставить заказ?</h2>

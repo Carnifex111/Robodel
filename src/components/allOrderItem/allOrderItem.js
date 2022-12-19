@@ -18,7 +18,7 @@ const AllOrderItem = ({el}) => {
                     </div>
                     <div>
                         <p>Дата доставки: <span>{date}</span></p>
-                        <p>Покупатель: <span>{seller}</span></p>
+                        <p>Продавец: <span>{seller}</span></p>
                     </div>
                 </div>
             </div>

@@ -8,14 +8,15 @@ import cross from "../../resources/icon/close.svg";
 import more from "../../resources/icon/more.svg";
 import messages from "../../resources/icon/messages.svg";
 import share from "../../resources/icon/share.svg";
+import { Link } from "react-router-dom";
 
 function TrackingInfo() {
   return (
     <div className="tracking-info">
-      <a className="link-back" href="#">
+      <Link to={'/'} className="link-back">
         <img src={arrow} alt="arrow" />
         Назад
-      </a>
+      </Link>
       <div className="tracking-info__status">
         <p>Покинуло склад</p>
       </div>

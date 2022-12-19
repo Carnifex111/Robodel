@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { OrderPage, TrackingPage, AllOrderPage } from '../../pages/index'
+import StartPage from '../../pages/startPage/startPage';
 
 const App = () => {
   return (
@@ -8,6 +9,9 @@ const App = () => {
       <div className="App">
         <Switch>
           <Route exact path="/">
+            <StartPage/>
+          </Route>
+          <Route exact path="/form">
             <OrderPage/>  
           </Route>
           <Route exact path="/tracking">
